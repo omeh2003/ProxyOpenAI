@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  web:
+    image: omeh2003/reversproxy:latest
+    container_name: reversproxy
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .env:/app/.env
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:alpine"
