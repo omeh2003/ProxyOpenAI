@@ -25,6 +25,7 @@ Installation
 
     ```
     OPEN_AI_API_KEY=<your OpenAI API key>
+
     API_KEY=<API key for proxy server access>
     ```
 
@@ -44,6 +45,7 @@ After the server starts, you can use the OpenAI Python Client to interact with t
 
     ```
     openai.api_base = "http://192.168.0.1:8080/api"
+    
     openai.api_key = "wcwcmoeineo"
     ```
     
