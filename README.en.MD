@@ -17,15 +17,11 @@ Installation
 
 2.  Clone the repository to your machine.
 
-    shCopy code
-
     `git clone <repository link>`
 
 3.  Create a `.env` file at the root of the project. In this file, you need to specify two API keys: the API key for access to the proxy server (`API_KEY`) and your API key for access to OpenAI (`OPEN_AI_API_KEY`).
 
     Example `.env` file:
-
-    shCopy code
 
     `OPEN_AI_API_KEY=<your OpenAI API key>
     API_KEY=<API key for proxy server access>`
@@ -35,8 +31,6 @@ Launch
 
 1.  Start Docker Compose.
 
-    shCopy code
-
     `docker-compose up -d`
 
     Docker Compose will automatically build and start the Flask and Redis containers. The server will start listening on port 8080.
@@ -45,8 +39,6 @@ Usage
 -----
 
 After the server starts, you can use the OpenAI Python Client to interact with the proxy server. Instead of the usual OpenAI API URL, use the base URL of your proxy server. Use the API key for access to the proxy server as your API key.
-
-pythonCopy code
 
 `openai.api_base = "http://192.168.0.1:8080/api"
 openai.api_key = "wcwcmoeineo"`
