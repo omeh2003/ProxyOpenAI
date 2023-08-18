@@ -43,11 +43,11 @@ Usage
 
 After the server starts, you can use the OpenAI Python Client to interact with the proxy server. Instead of the usual OpenAI API URL, use the base URL of your proxy server. Use the API key for access to the proxy server as your API key.
 
-    ```
+    
     openai.api_base = "http://192.168.0.1:8080/api"
     
     openai.api_key = "wcwcmoeineo"
-    ```
+    
     
 
 License
